@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Link2Help - Seekers' Form</title>
+        <link rel="stylesheet" href = "../style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
+
+        <style>
+            #map {
+            height: 400px;
+            width: 100%;
+        }
+        </style>
+    </head>
+    <body>
+    <div id = "wrapper">
+        <div class = "header">
+            <img src="../logo.png">
+        </div>
+
+        <div class = "question">
+            Recommended Organizations:
+        </div>
+
+        <div id= "map"></div>
+
+        <script>
+            function initMap() {
+                var location = {lat: 49.282422, lng: -123.108164}
+                var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: location});
+                var marker = new google.maps.Marker({position: location, map: map});
+            }
+        </script>
+
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?
+                key=AIzaSyBnYxSOA0TNrhiwnXnAjIE-fyIb8EeNbsI&callback=initMap">
+        </script>
+
+    </div>
+    </body>
+
+</html>
