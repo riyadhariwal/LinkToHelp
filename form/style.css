@@ -21,7 +21,8 @@ body {
 }
 
 .question, .header {
-    margin-top: 20px;
+    margin-top: 35px;
+    margin-bottom: 20px;
 }
 
 .header {
