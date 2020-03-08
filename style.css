@@ -5,7 +5,7 @@ html {
 :root {
     --accent-color: #A1C0Bd;
     --accent-dark: #4f8e88;
-    --icon-size: 43px;
+    --icon-size: 65px;
 }
 
 body {
@@ -82,18 +82,51 @@ footer {
 }
 
 .hamburger {
-    float: right;
+    align-items: flex-end;
+    text-align: right;
     font-size: var(--icon-size);
-    top: 20px;
-    right: 20px
-    margin-right: 20px
-    position: fixed;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-options {
+    margin-right: 60px;
+    text-align: left;
+    padding: 10px;
 
 }
 
+.dropdown {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.dropdown-content {
+    background-color: #A1C0BD;
+    max-width: 360px;
+    box-shadow: 0px 0px 20px #000000;
+    z-index: 1;
+    text-align: right;
+    margin: 60px;
+}
+
+.dropmenu-content a {
+    color: black;
+    padding: 13px 16px;
+    text-decoration: ;
+    display: block;
+}
+
+.dropmenu:hover .dropmenu-content {
+    display: block;
+}
+
 .right-column {
-   /*width: 40%;*/
+    display: flex;
      flex-grow: 1;
+    justify-content: flex-end;
 }
 
 @media screen and (max-width: 479px) {
