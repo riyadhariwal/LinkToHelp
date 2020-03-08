@@ -91,6 +91,7 @@ footer {
 }
 
 .dropdown-options {
+    display: none;
     margin-right: 60px;
     text-align: left;
     padding: 10px;
