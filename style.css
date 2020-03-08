@@ -27,15 +27,15 @@ body {
 }
 
 body h1 {
-    margin-top: 20px;
+    margin-top: 60px;
     font-family: "Lato", serif;
     font-size: 107px;
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
 body h2 {
     font-size: 56px;
+    margin-top: 40px;
 }
 
 .icon {
@@ -44,7 +44,8 @@ body h2 {
 
 #report {
     column-width: 50%;
-    margin: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
     padding: 10px;
     font-size: 40px;
     background-color: var(--accent-color);
@@ -87,14 +88,17 @@ footer {
     font-size: var(--icon-size);
     background: none;
     border: none;
+    padding: 10px;
     cursor: pointer;
 }
 
 .dropdown-options {
     display: none;
-    margin-right: 60px;
+    margin-right: 100px;
     text-align: left;
-    padding: 10px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    font-size: 50px;
 
 }
 
@@ -111,6 +115,7 @@ footer {
     z-index: 1;
     text-align: right;
     margin: 60px;
+    border-radius: 10px;
 }
 
 .dropmenu-content a {
