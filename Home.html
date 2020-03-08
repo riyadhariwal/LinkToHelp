@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href = "style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+<div class ="wrapper">
+    <div class = "section">
+
+        <div class = "left-column">
+
+            <h1>Link 2 Help</h1>
+
+            <h2>Helping women speak up in<br>regards to workforce issues.</h2>
+
+            <button id ="report">Report Issue Now</button>
+
+            <footer>
+
+                <nav>
+                    <li><ion-icon name="logo-instagram"></ion-icon></li>
+                    <li><ion-icon name="logo-facebook"></ion-icon></li>
+                    <li><ion-icon name="logo-twitter"></ion-icon></li>
+                </nav>
+
+            </footer>
+
+        </div>
+
+        <div class = "right-column">
+            <div class = "hamburger-container">
+                <div class = "dropdown-content">
+                    <button class="hamburger"><ion-icon name="menu-outline"></ion-icon></button>
+                    <div class="dropdown-options">
+                        <a href="#about-section">About</a>
+                        <a href="#services-section">Services</a>
+                        <a href="#get-help-section">Get Help</a>
+                        <a href="#contact-section">Contact Information</a>
+                        <a href="#FAQ">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "center-column">
+        <div id = "about-section">
+            <h2>ABOUT</h2>
+        </div>
+        <div class = "about-section-text translucent-box">
+            <p><Span>Link to Help is a non-profit organization that works to provide anonymous and reliable support for<br/>
+                women*. We assist women across British Columbia seeking confidential and professional consultation on a<br/>
+                variety of issues affecting women in the workforce, such as harassment and income disparity. </Span></p>
+        </div>
+        <div id = "services-section">
+            <h2>OUR SERVICES</h2>
+        </div>
+        <div class = "services-section-text translucent-box">
+            <p><Span>Through anonymous service, we connect women* with reliable organizations that can provide credible and <br/>
+                useful advice. We will ensure your anonymity via the use of unique and secure strings you can input to <br/>
+                reach out to organizations. </Span></p>
+        </div>
+        <div id = "get-help-section">
+            <h2>GET HELP</h2>
+        </div>
+        <div>
+        <button id ="report2">Report Issue Now</button>
+        </div>
+        <div id = "contact-section">
+            <h2>CONTACT</h2>
+        </div>
+        <div class = "contact-section-text translucent-box">
+            <p><span>Our email: linktohelp_cmdf2020@gmail.com<br/>
+                <br/>
+
+                In an immediate emergency, please call 911. <br/>
+                <br/>
+                Helpful Hotlines:<br/>
+                National Sexual Assault Hotline: 1-800-656-HOPE <br/>
+                Trevor Hotline (Suicide): 1-866-4-U-TREVOR <br/>
+                Suicide Hotline: 1-800-SUICIDE <br/>
+                Suicide Prevention Hotline: 1-800-827-7571 <br/>
+                Battered Women and their Children: 1-800-603-HELP</span></p>
+        </div>
+        <div id = "FAQ">
+            <h2>FAQ</h2>
+        </div>
+        <div class = "faq-section-text translucent-box">
+            <p>How do we know the organizations are reliable?The organizations are government certified and well <br/>
+                established in their fields. All organizations must provide documents to ensure their credibility and <br>
+                all employees working through our service are trained.
+                <br/>
+
+                How is my anonymity ensured? - We will never ask for your name, email address, or location; you will <br/>
+                remain anonymous. We provide a secure key for you to use to connect with organizations you have <br/>
+                previously spoken.
+                <br/>
+                Who are we? - We are a group of female* developers and designers working towards a common goal:<br/>
+                empowering women*.
+                <br/>
+                *We would like to acknowledge that "female" and "women" encompass those who self-identify as female and <br/>
+                other gender minorities.
+            </p>
+    </div>
+</div>
+
+</body>
+
+<script>
+document.querySelector (".hamburger").addEventListener("mouseover", () => {
+
+    document.querySelector(".dropdown-options").style.display = "inherit";
+})
+
+document.querySelector (".hamburger-container").addEventListener("mouseleave", () => {
+    document.querySelector(".dropdown-options").style.display = "none";
+})
+</script>
+</html>
